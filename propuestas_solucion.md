@@ -10,7 +10,7 @@ Se puede resolver con una combinación de configuración estándar y desarrollo 
 
 * `account.move` (facturas)
 * `ir.sequence` (consecutivos)
-* Modelo de resolución DIAN (custom si no existe)
+* Modelo de resolución DIAN 
 
 ### Desarrollo requerido
 
