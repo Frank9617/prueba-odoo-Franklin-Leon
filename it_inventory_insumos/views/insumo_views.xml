@@ -1,0 +1,41 @@
+<odoo>
+
+    <record id="view_insumo_tree" model="ir.ui.view">
+        <field name="name">it.insumo.tree</field>
+        <field name="model">it.insumo</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="categoria"/>
+                <field name="sede"/>
+                <field name="cantidad_stock"/>
+                <field name="cantidad_minima"/>
+                <field name="alerta_stock"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_insumo_form" model="ir.ui.view">
+        <field name="name">it.insumo.form</field>
+        <field name="model">it.insumo</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="categoria"/>
+                        <field name="sede"/>
+                        <field name="proveedor_id"/>
+                    </group>
+                    <group>
+                        <field name="cantidad_stock"/>
+                        <field name="cantidad_minima"/>
+                        <field name="precio_unitario"/>
+                        <field name="alerta_stock" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>
